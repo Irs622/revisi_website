@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://inpartner.id/ko</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/about</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/about" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/services</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/services" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/services" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/services/business-management-consulting</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/services/business-management-consulting" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/services/business-management-consulting" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/services/investment</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/services/investment" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/services/investment" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/services/capacity-building</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/services/capacity-building" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/services/capacity-building" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/project</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/project" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/project" />
+  </url>
+  <url>
+    <loc>https://inpartner.id/ko/contact</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://inpartner.id/contact" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://inpartner.id/ko/contact" />
+  </url>
+</urlset>

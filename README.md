@@ -1,0 +1,35 @@
+# Inpartner Website SEO Audit & Developer Handover Repository
+
+Repository ini berisi hasil audit komprehensif, panduan revisi teknis, kamus metadata, dan spesifikasi implementasi SEO (Bahasa Inggris dan Bahasa Korea) untuk website **[Inpartner (PT Inpartner Optima Integra)](https://inpartner.id/)**.
+
+---
+
+## 📌 Panduan Navigasi Dokumen
+
+Bagi tim pengembang (*developer*), silakan langsung merujuk ke file-file berikut:
+
+| Nama File | Format | Deskripsi & Kegunaan |
+| :--- | :---: | :--- |
+| **[`SEO_AUDIT_DAN_PANDUAN_REVISI_DEVELOPER.md`](./SEO_AUDIT_DAN_PANDUAN_REVISI_DEVELOPER.md)** | `Markdown` | **DOKUMEN UTAMA:** Berisi 17 tiket kerja (P0–P3), kode Next.js siap pakai (`next.config.js`, `_document.jsx`, `components/SEO.jsx`), tabel *find & replace* typo/slang, penerjemahan portofolio proyek, Schema JSON-LD, dan QA checklist. |
+| **[`developer_handover_final.json`](./developer_handover_final.json)** | `JSON` | **Kamus Data & Metadata:** Berisi kamus tag `<title>`, `<meta description>`, `<h1>`, `<h2>`, dan teks revisi terstruktur siap pakai secara programatik. |
+| **[`english_seo.json`](./english_seo.json)** | `JSON` | Spesifikasi teknis & metadata lengkap versi bahasa Inggris. |
+| **[`korean_seo.json`](./korean_seo.json)** | `JSON` | Spesifikasi teknis & metadata lengkap versi bahasa Korea (Naver & Google Korea). |
+| **[`seo.json`](./seo.json)** | `JSON` | Database riset kata kunci & taksonomi versi bahasa Inggris (arsip internal). |
+| **[`seo_ko.json`](./seo_ko.json)** | `JSON` | Database riset kata kunci & taksonomi versi bahasa Korea (arsip internal). |
+| **[`sitemap.xml`](./sitemap.xml)** | `XML` | File XML sitemap versi bahasa Inggris siap salin ke folder `public/`. |
+| **[`ko-sitemap.xml`](./ko-sitemap.xml)** | `XML` | File XML sitemap versi bahasa Korea siap salin ke folder `public/`. |
+
+---
+
+## 🎯 4 Fokus Revisi Paling Mendesak (Sprint P0)
+
+1. **Routing Versi Korea:** Hapus widget client-side Google Translate (`#google_translate_element`), ganti dengan subpath statis `/ko/*` agar dapat diindeks mesin pencari.
+2. **Koreksi Typo Fatal:** Perbaiki kata `"Busines"` pada kartu layanan utama di `pages/services.js` dan hapus slang informal `"give you a home run"`.
+3. **Canonical & Hreflang:** Pasang tag `canonical` mandiri dan `hreflang` bilateral (`en`, `ko`, `x-default`) di seluruh halaman.
+4. **Pecah Layanan Hash (`#`):** Buat URL mandiri untuk `/services/business-management-consulting`, `/services/investment`, dan `/services/capacity-building`.
+
+---
+
+## 👨‍💻 Kontak & Verifikasi
+
+Jika ada pertanyaan teknis terkait implementasi atau penyesuaian kode, silakan merujuk pada checklist di **Bab 10** file [`SEO_AUDIT_DAN_PANDUAN_REVISI_DEVELOPER.md`](./SEO_AUDIT_DAN_PANDUAN_REVISI_DEVELOPER.md).
