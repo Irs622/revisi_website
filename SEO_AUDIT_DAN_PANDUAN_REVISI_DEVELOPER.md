@@ -155,6 +155,21 @@ const nextConfig = {
   images: {
     domains: ['inpartner.id'],
   },
+  async redirects() {
+    return [
+      // TIKET-18: 301 Redirects untuk broken links & normalisasi rute layanan
+      {
+        source: '/services/business-and-management',
+        destination: '/services/business-management-consulting',
+        permanent: true,
+      },
+      {
+        source: '/projects',
+        destination: '/project',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
@@ -645,3 +660,5 @@ Sebelum merilis perubahan ke server produksi (*production*), developer wajib mem
   - Submit sitemap `https://inpartner.id/ko-sitemap.xml`.
 - [ ] **7. Verifikasi Perbaikan Typo:** Pastikan tidak ada lagi teks `"Busines and Management Consulting"` di `/services` dan tidak ada lagi kata `"East Jave"` atau slang `"home run"`.
 - [ ] **8. Uji Tombol "Meet our Team":** Pastikan tombol di `/about` tidak lagi melakukan *reloading* halaman tanpa aksi.
+- [ ] **9. Uji 301 Redirect Broken Links (TIKET-18):** Pastikan URL-URL broken link yang terdeteksi Semrush merespons dengan status `301 Moved Permanently` ke rute yang valid dan tidak lagi menghasilkan error 404 bagi crawler.
+
