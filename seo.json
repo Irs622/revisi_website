@@ -1,0 +1,831 @@
+{
+    "project": "Inpartner",
+    "domain": "https://inpartner.id/",
+    "language": "English",
+    "market": "Indonesia",
+    "strategy": {
+        "primary_focus": [
+            "Business & Management Consulting",
+            "Investment"
+        ],
+        "secondary_focus": [
+            "Business Strategy",
+            "Organizational Performance",
+            "Operations",
+            "Market Research",
+            "Growth Strategy",
+            "Investment Solutions"
+        ],
+        "geo_focus": [
+            "Indonesia",
+            "Jakarta"
+        ],
+        "principle": "Prioritize search intent, business relevance, service relevance, target audience, and conversion potential over search volume alone."
+    },
+    "primary_keywords": [
+        {
+            "keyword": "business consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "executives",
+                "corporate_decision_makers"
+            ],
+            "recommended_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "management consulting",
+            "intent": "commercial",
+            "audience": [
+                "executives",
+                "corporate_decision_makers",
+                "organizations"
+            ],
+            "recommended_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "business strategy consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "executives",
+                "corporate_decision_makers"
+            ],
+            "recommended_page": "/services/business-management-consulting/business-strategy",
+            "priority": "P0"
+        },
+        {
+            "keyword": "business consulting Indonesia",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "corporate_clients"
+            ],
+            "recommended_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "management consulting Indonesia",
+            "intent": "commercial",
+            "audience": [
+                "executives",
+                "corporate_clients",
+                "organizations"
+            ],
+            "recommended_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "investment advisory",
+            "intent": "commercial",
+            "audience": [
+                "individual_investors",
+                "corporate_clients",
+                "institutional_clients"
+            ],
+            "recommended_page": "/services/investment",
+            "priority": "P0",
+            "validation": "Confirm that investment advisory is an officially offered service."
+        },
+        {
+            "keyword": "investment advisory Indonesia",
+            "intent": "commercial",
+            "audience": [
+                "individual_investors",
+                "corporate_clients",
+                "institutional_clients"
+            ],
+            "recommended_page": "/services/investment",
+            "priority": "P0",
+            "validation": "Confirm official service terminology."
+        },
+        {
+            "keyword": "investment solutions",
+            "intent": "commercial",
+            "audience": [
+                "individual_investors",
+                "corporate_clients",
+                "institutional_clients"
+            ],
+            "recommended_page": "/services/investment",
+            "priority": "P0"
+        }
+    ],
+    "business_management_consulting": {
+        "business_strategy": [
+            {
+                "keyword": "business strategy consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P0"
+            },
+            {
+                "keyword": "business strategy consultant",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "strategic business consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "business strategy advisory",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "corporate strategy consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "strategic planning consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            }
+        ],
+        "organizational_performance": [
+            {
+                "keyword": "organizational performance consulting",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "organizational performance",
+                "intent": "informational_commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "organizational effectiveness consulting",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "performance improvement consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "executives"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "operations": [
+            {
+                "keyword": "operations consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "operations consulting Indonesia",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "business operations consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "operational improvement consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "business process consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "market_research": [
+            {
+                "keyword": "market research consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "market research consultant",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "market research Indonesia",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "market analysis consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "industry analysis consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "investors"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "competitor analysis consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "growth_strategy": [
+            {
+                "keyword": "growth strategy consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "business growth consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "growth strategy consultant",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "growth advisory",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2",
+                "validation": "Confirm official service terminology."
+            },
+            {
+                "keyword": "market expansion consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "business expansion consulting",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P2"
+            }
+        ]
+    },
+    "investment": {
+        "core": [
+            {
+                "keyword": "investment advisory",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0",
+                "validation": "Confirm official service terminology."
+            },
+            {
+                "keyword": "investment advisory Indonesia",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0",
+                "validation": "Confirm official service terminology."
+            },
+            {
+                "keyword": "investment solutions",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0"
+            },
+            {
+                "keyword": "investment consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "Confirm official service terminology."
+            },
+            {
+                "keyword": "investment strategy",
+                "intent": "informational_commercial",
+                "audience": [
+                    "investors",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            }
+        ],
+        "corporate": [
+            {
+                "keyword": "corporate investment advisory",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients",
+                    "executives"
+                ],
+                "priority": "P1",
+                "validation": "Confirm service availability."
+            },
+            {
+                "keyword": "corporate investment consulting",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients"
+                ],
+                "priority": "P1",
+                "validation": "Confirm service availability."
+            },
+            {
+                "keyword": "corporate investment strategy",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "investment advisory for companies",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients"
+                ],
+                "priority": "P2",
+                "validation": "Confirm service availability."
+            }
+        ],
+        "institutional": [
+            {
+                "keyword": "institutional investment advisory",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "Confirm service availability."
+            },
+            {
+                "keyword": "institutional investment consulting",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "Confirm service availability."
+            },
+            {
+                "keyword": "institutional investment solutions",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "individual": [
+            {
+                "keyword": "investment solutions for individuals",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors"
+                ],
+                "priority": "P1",
+                "validation": "Confirm that individual investment services are offered."
+            },
+            {
+                "keyword": "investment advisory for individuals",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors"
+                ],
+                "priority": "P2",
+                "validation": "Confirm regulatory/service scope."
+            }
+        ]
+    },
+    "advanced_service_keywords": {
+        "status": "validation_required_before_website_targeting",
+        "reason": "These terms are associated with external professional information related to Inpartner, but they should not become official SEO targets until management confirms that they are current, public-facing services.",
+        "keywords": [
+            {
+                "keyword": "capital market advisory",
+                "priority": "P1"
+            },
+            {
+                "keyword": "capital market advisory Indonesia",
+                "priority": "P1"
+            },
+            {
+                "keyword": "due diligence advisory",
+                "priority": "P1"
+            },
+            {
+                "keyword": "financial due diligence",
+                "priority": "P1"
+            },
+            {
+                "keyword": "business due diligence",
+                "priority": "P1"
+            },
+            {
+                "keyword": "investment due diligence",
+                "priority": "P1"
+            },
+            {
+                "keyword": "feasibility study consultant",
+                "priority": "P1"
+            },
+            {
+                "keyword": "business feasibility study",
+                "priority": "P1"
+            },
+            {
+                "keyword": "investment feasibility study",
+                "priority": "P1"
+            },
+            {
+                "keyword": "financial analysis consulting",
+                "priority": "P2"
+            },
+            {
+                "keyword": "financial advisory",
+                "priority": "P2"
+            },
+            {
+                "keyword": "corporate planning consultant",
+                "priority": "P2"
+            },
+            {
+                "keyword": "corporate strategy consultant",
+                "priority": "P2"
+            },
+            {
+                "keyword": "IPO advisory",
+                "priority": "P2"
+            },
+            {
+                "keyword": "pre IPO advisory",
+                "priority": "P2"
+            }
+        ]
+    },
+    "geo_keywords": [
+        {
+            "keyword": "business consulting Indonesia",
+            "target_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "management consulting Indonesia",
+            "target_page": "/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "business strategy consulting Indonesia",
+            "target_page": "/services/business-management-consulting",
+            "priority": "P1"
+        },
+        {
+            "keyword": "investment advisory Indonesia",
+            "target_page": "/services/investment",
+            "priority": "P0",
+            "validation": "Confirm official terminology."
+        },
+        {
+            "keyword": "investment consulting Indonesia",
+            "target_page": "/services/investment",
+            "priority": "P1",
+            "validation": "Confirm official terminology."
+        },
+        {
+            "keyword": "business consulting Jakarta",
+            "target_page": "/services/business-management-consulting",
+            "priority": "P2"
+        },
+        {
+            "keyword": "management consulting Jakarta",
+            "target_page": "/services/business-management-consulting",
+            "priority": "P2"
+        },
+        {
+            "keyword": "investment advisory Jakarta",
+            "target_page": "/services/investment",
+            "priority": "P2",
+            "validation": "Confirm official terminology."
+        }
+    ],
+    "informational_keywords": [
+        {
+            "keyword": "business strategy",
+            "intent": "informational",
+            "recommended_content": "Business Strategy Insights",
+            "priority": "P1"
+        },
+        {
+            "keyword": "corporate strategy",
+            "intent": "informational",
+            "recommended_content": "Corporate Strategy Insights",
+            "priority": "P1"
+        },
+        {
+            "keyword": "market research",
+            "intent": "informational",
+            "recommended_content": "Market Research Insights",
+            "priority": "P1"
+        },
+        {
+            "keyword": "market entry strategy",
+            "intent": "informational_commercial",
+            "recommended_content": "Market Entry Strategy",
+            "priority": "P2"
+        },
+        {
+            "keyword": "business growth strategy",
+            "intent": "informational_commercial",
+            "recommended_content": "Business Growth Strategy",
+            "priority": "P1"
+        },
+        {
+            "keyword": "investment advisory",
+            "intent": "informational_commercial",
+            "recommended_content": "Investment Advisory Guide",
+            "priority": "P1"
+        },
+        {
+            "keyword": "investment due diligence",
+            "intent": "informational_commercial",
+            "recommended_content": "Investment Due Diligence",
+            "priority": "P2"
+        },
+        {
+            "keyword": "business feasibility study",
+            "intent": "informational_commercial",
+            "recommended_content": "Business Feasibility Study",
+            "priority": "P2"
+        },
+        {
+            "keyword": "corporate planning",
+            "intent": "informational_commercial",
+            "recommended_content": "Corporate Planning",
+            "priority": "P2"
+        }
+    ],
+    "branded_keywords": [
+        {
+            "keyword": "Inpartner",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "Inpartner Indonesia",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "PT Inpartner Optima Integra",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "Inpartner Consulting",
+            "intent": "navigational",
+            "priority": "P1",
+            "validation": "Use only if this is an officially recognized public-facing brand name."
+        },
+        {
+            "keyword": "Inpartner investment",
+            "intent": "navigational_commercial",
+            "priority": "P1"
+        },
+        {
+            "keyword": "Inpartner business consulting",
+            "intent": "navigational_commercial",
+            "priority": "P1"
+        }
+    ],
+    "negative_or_low_priority_targets": [
+        "investment",
+        "consulting",
+        "business",
+        "finance",
+        "strategy",
+        "company",
+        "best investment",
+        "investment app",
+        "how to invest",
+        "stocks",
+        "crypto",
+        "mutual funds",
+        "personal finance"
+    ],
+    "keyword_mapping_rules": {
+        "homepage": [
+            "business consulting",
+            "management consulting",
+            "business consulting Indonesia",
+            "investment solutions"
+        ],
+        "business_management_consulting": [
+            "business consulting",
+            "management consulting",
+            "business consulting Indonesia",
+            "management consulting Indonesia"
+        ],
+        "business_strategy": [
+            "business strategy consulting",
+            "business strategy consultant",
+            "strategic business consulting",
+            "corporate strategy consulting"
+        ],
+        "organizational_performance": [
+            "organizational performance consulting",
+            "organizational effectiveness consulting",
+            "performance improvement consulting"
+        ],
+        "operations": [
+            "operations consulting",
+            "business operations consulting",
+            "operational improvement consulting",
+            "business process consulting"
+        ],
+        "market_research": [
+            "market research consulting",
+            "market research consultant",
+            "market research Indonesia",
+            "market analysis consulting"
+        ],
+        "growth_strategy": [
+            "growth strategy consulting",
+            "business growth consulting",
+            "growth strategy consultant",
+            "business expansion consulting"
+        ],
+        "investment": [
+            "investment advisory",
+            "investment advisory Indonesia",
+            "investment solutions",
+            "investment consulting"
+        ],
+        "corporate_investment": [
+            "corporate investment advisory",
+            "corporate investment consulting",
+            "corporate investment strategy"
+        ],
+        "institutional_investment": [
+            "institutional investment advisory",
+            "institutional investment consulting",
+            "institutional investment solutions"
+        ],
+        "about": [
+            "Inpartner",
+            "PT Inpartner Optima Integra",
+            "Inpartner Indonesia"
+        ],
+        "contact": [
+            "contact Inpartner",
+            "Inpartner Indonesia"
+        ],
+        "insights": [
+            "business strategy",
+            "corporate strategy",
+            "market research",
+            "business growth strategy",
+            "investment advisory",
+            "investment due diligence"
+        ]
+    },
+    "implementation_rules": [
+        "Do not place all keywords on the homepage.",
+        "One primary search intent should have one primary target page.",
+        "Avoid keyword cannibalization between service pages.",
+        "Do not create a page solely because a keyword exists.",
+        "Create a dedicated service page only when the service is genuinely offered.",
+        "Use exact terminology approved by management for investment-related services.",
+        "Do not use financial or investment terminology that implies a service or regulatory status that Inpartner does not officially provide.",
+        "Use Indonesian geographic modifiers only where they represent actual target markets.",
+        "Use keywords naturally in title, H1, introduction, headings, body content, internal links, image alt text where appropriate, and metadata.",
+        "Do not use keyword stuffing.",
+        "Every commercial page must have a distinct search intent, audience, value proposition, and CTA.",
+        "Resolve duplicate URLs and duplicate content before expanding the number of SEO landing pages."
+    ],
+    "validation_required": [
+        "Search volume",
+        "Keyword difficulty",
+        "Current Google rankings",
+        "Current impressions",
+        "Current clicks",
+        "CTR",
+        "Existing landing pages",
+        "Competitor SERPs",
+        "Official service availability",
+        "Investment service terminology",
+        "Geographic targeting priority"
+    ]
+}

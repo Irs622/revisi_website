@@ -1,0 +1,312 @@
+{
+  "document_title": "Inpartner SEO Audit & Developer Handover Specification (Final)",
+  "project": "Inpartner",
+  "domain": "https://inpartner.id/",
+  "client_entity": "PT Inpartner Optima Integra",
+  "target_recipient": "Lead Web Engineering & Frontend Developer",
+  "version": "1.0.0",
+  "handed_over_at": "2026-09-28",
+  "audit_summary": {
+    "korean_health_score": "15/100 (CRITICAL: 0% indexed due to client-side Google Translate widget)",
+    "english_health_score": "32/100 (HIGH RISK: Fragmented hash URLs, broken H1-H5 hierarchy, damaging typos)",
+    "target_languages": ["en", "ko"],
+    "primary_business_sectors": [
+      "Business & Management Consulting",
+      "Investment Advisory"
+    ]
+  },
+  "developer_tickets": [
+    {
+      "ticket_id": "TICKET-01",
+      "priority": "P0",
+      "category": "Architecture & i18n",
+      "task": "Decommission Google Translate Widget & Implement Static /ko Subpath Routing",
+      "target_files": ["next.config.js", "components/Navbar.jsx", "pages/ko/*"],
+      "action": "Remove #google_translate_element and the JS button. Enable Next.js i18n routing or build physical pages under pages/ko/* so search crawlers receive server-rendered Korean HTML."
+    },
+    {
+      "ticket_id": "TICKET-02",
+      "priority": "P0",
+      "category": "HTML Semantics & Metadata",
+      "task": "Dynamic HTML Lang Attribute in Document",
+      "target_files": ["pages/_document.jsx"],
+      "action": "Ensure <Html lang={locale}> renders 'en' for English and 'ko' for Korean, plus <meta http-equiv=\"content-language\" content=\"ko-kr\"> on Korean pages."
+    },
+    {
+      "ticket_id": "TICKET-03",
+      "priority": "P0",
+      "category": "Technical SEO",
+      "task": "Inject Canonical & Bidirectional Hreflang Tags",
+      "target_files": ["components/SEO.jsx"],
+      "action": "Add self-referencing <link rel=\"canonical\"> on every page and declare bilateral hreflang tags (en, ko, x-default)."
+    },
+    {
+      "ticket_id": "TICKET-04",
+      "priority": "P0",
+      "category": "Copywriting Hygiene",
+      "task": "Fix Critical Typos Across Service & About Pages",
+      "target_files": ["pages/services.js", "pages/about.js", "pages/index.js"],
+      "action": "Replace 'Busines' with 'Business' on services card 1; replace 'PT Inpartrner' with 'PT Inpartner' on about; replace 'East Jave' with 'East Java'."
+    },
+    {
+      "ticket_id": "TICKET-05",
+      "priority": "P0",
+      "category": "Tone & Professionalism",
+      "task": "Eliminate Casual Slang Metaphors",
+      "target_files": ["pages/index.js", "pages/about.js"],
+      "action": "Replace 'give you a home run' with professional corporate advisory language ('deliver measurable, high-impact business outcomes')."
+    },
+    {
+      "ticket_id": "TICKET-06",
+      "priority": "P0",
+      "category": "Heading Semantics",
+      "task": "Add Missing H1 Tag to Contact Page",
+      "target_files": ["pages/contact.js"],
+      "action": "Add <h1>Contact Inpartner Consulting Jakarta & Surabaya</h1> as the primary heading before the form."
+    },
+    {
+      "ticket_id": "TICKET-07",
+      "priority": "P0",
+      "category": "Metadata Hygiene",
+      "task": "Separate Duplicate Meta Descriptions Between Project & Blog",
+      "target_files": ["pages/project.js", "pages/blog.js"],
+      "action": "Replace the identical generic project management definition on /project and /blog with distinct, conversion-focused meta descriptions."
+    },
+    {
+      "ticket_id": "TICKET-08",
+      "priority": "P0",
+      "category": "Server & WAF",
+      "task": "Whitelist Verified Search Engine Bots on Cloudflare/WAF",
+      "target_files": ["Cloudflare WAF / Server Firewall Rules"],
+      "action": "Allow Googlebot, Bingbot, and Naver Yeti (Yeti/1.1) to access /robots.txt and /sitemap.xml without JS challenge pages."
+    },
+    {
+      "ticket_id": "TICKET-09",
+      "priority": "P1",
+      "category": "URL Architecture",
+      "task": "Disentangle /services Hash Anchors into Dedicated URLs",
+      "target_files": [
+        "pages/services/business-management-consulting.jsx",
+        "pages/services/investment.jsx",
+        "pages/services/capacity-building.jsx"
+      ],
+      "action": "Create standalone URLs for each service so search engines can index and rank them independently."
+    },
+    {
+      "ticket_id": "TICKET-10",
+      "priority": "P1",
+      "category": "Heading Semantics",
+      "task": "Refactor <h5> Tags into Semantic <h2> and <h3>",
+      "target_files": ["pages/index.js", "pages/about.js", "pages/services.js"],
+      "action": "Change <h5> tags used for section titles to <h2> and sub-services to <h3> while retaining Emotion CSS classes."
+    },
+    {
+      "ticket_id": "TICKET-11",
+      "priority": "P1",
+      "category": "Content & Authority",
+      "task": "Translate Portfolio Project Titles on English Site",
+      "target_files": ["pages/project.js", "pages/ko/project.js"],
+      "action": "Translate raw Indonesian project titles (BUJT, BRT, Getaci) into professional English and Korean."
+    },
+    {
+      "ticket_id": "TICKET-12",
+      "priority": "P1",
+      "category": "Structured Data",
+      "task": "Inject Schema.org JSON-LD (Organization, Service, FAQPage)",
+      "target_files": ["components/SEO.jsx", "pages/index.js", "pages/services.js"],
+      "action": "Embed structured data in page head for both English and Korean pages."
+    },
+    {
+      "ticket_id": "TICKET-13",
+      "priority": "P2",
+      "category": "UX & E-E-A-T",
+      "task": "Resolve 'Meet our Team' Navigation Loop on /about",
+      "target_files": ["pages/about.js"],
+      "action": "Fix button looping back to /about; display actual leadership and senior partner credentials."
+    }
+  ],
+  "nextjs_code_snippets": {
+    "next_config_js": "module.exports = {\n  reactStrictMode: true,\n  i18n: {\n    locales: ['en', 'ko'],\n    defaultLocale: 'en',\n    localeDetection: false\n  }\n};",
+    "document_jsx": "import Document, { Html, Head, Main, NextScript } from 'next/document';\n\nclass MyDocument extends Document {\n  render() {\n    const locale = this.props.__NEXT_DATA__.locale || 'en';\n    return (\n      <Html lang={locale}>\n        <Head />\n        <body>\n          <Main />\n          <NextScript />\n        </body>\n      </Html>\n    );\n  }\n}\nexport default MyDocument;",
+    "robots_txt": "User-agent: *\nAllow: /\n\nUser-agent: Yeti\nAllow: /\n\nSitemap: https://inpartner.id/sitemap.xml\nSitemap: https://inpartner.id/ko-sitemap.xml"
+  },
+  "metadata_dictionary": {
+    "english": {
+      "homepage": {
+        "url": "/",
+        "title": "Business & Management Consulting Jakarta | Inpartner",
+        "meta_desc": "Inpartner is a leading management consulting and investment advisory firm in Jakarta and Surabaya, helping enterprises drive growth and optimize operations.",
+        "h1": "Strategic Business Consulting & Investment Solutions in Indonesia"
+      },
+      "about": {
+        "url": "/about",
+        "title": "About Inpartner | Management Consulting & Investment Advisory",
+        "meta_desc": "Established in 2009, PT Inpartner Optima Integra provides strategic corporate consulting, feasibility studies, and investment advisory in Indonesia.",
+        "h1": "About Inpartner: Trusted Management Consulting in Indonesia"
+      },
+      "services_hub": {
+        "url": "/services",
+        "title": "Consulting & Investment Advisory Services | Inpartner Indonesia",
+        "meta_desc": "Explore Inpartner's comprehensive advisory services: corporate strategy, operational optimization, market research, and investment feasibility studies.",
+        "h1": "Business Consulting & Investment Advisory Services"
+      },
+      "business_consulting": {
+        "url": "/services/business-management-consulting",
+        "title": "Business & Management Consulting Services | Inpartner Jakarta",
+        "meta_desc": "Accelerate enterprise performance with Inpartner's business consulting, corporate strategy formulation, operations redesign, and market entry research.",
+        "h1": "Business and Management Consulting Services"
+      },
+      "investment": {
+        "url": "/services/investment",
+        "title": "Investment Advisory & Feasibility Study Services | Inpartner",
+        "meta_desc": "Comprehensive investment advisory in Indonesia: financial modeling, feasibility studies (FS), valuation analysis, and private equity transaction advisory.",
+        "h1": "Investment Advisory & Capital Solutions in Indonesia"
+      },
+      "projects": {
+        "url": "/project",
+        "title": "Portfolio & Completed Advisory Projects | Inpartner Indonesia",
+        "meta_desc": "Review Inpartner's delivered advisory track record: feasibility studies for toll roads, BRT transportation, renewable energy, and investment teasers.",
+        "h1": "Proven Advisory Track Record & Delivered Projects"
+      },
+      "contact": {
+        "url": "/contact",
+        "title": "Contact Us | Inpartner Consulting Offices Jakarta & Surabaya",
+        "meta_desc": "Connect with Inpartner's senior consultants in Jakarta and Surabaya. Request a consultation for strategic business management or investment advisory.",
+        "h1": "Contact Inpartner Consulting Jakarta & Surabaya"
+      }
+    },
+    "korean": {
+      "homepage": {
+        "url": "/ko",
+        "title": "인도네시아 비즈니스 경영 컨설팅 및 투자 자문 | 인파트너",
+        "meta_desc": "인파트너(Inpartner)는 한국 기업의 인도네시아 시장 진출, 현지 법인 설립 자문, 사업 타당성 조사(FS), 투자 실사를 전문으로 지원하는 현지 전략 컨설팅 펌입니다.",
+        "h1": "인도네시아 비즈니스 성공을 이끄는 전략 컨설팅 & 투자 자문"
+      },
+      "about": {
+        "url": "/ko/about",
+        "title": "인파트너 소개 | 인도네시아 전문 경영 컨설팅 펌 (Inpartner)",
+        "meta_desc": "2009년 설립된 PT Inpartner Optima Integra는 자카르타 본사와 수라바야 지사를 기반으로 국내외 중견·대기업에 최적화된 경영 및 투자 솔루션을 제공합니다.",
+        "h1": "인도네시아 비즈니스의 신뢰할 수 있는 전략적 파트너, 인파트너"
+      },
+      "services_hub": {
+        "url": "/ko/services",
+        "title": "전문 컨설팅 서비스 안내 | 인도네시아 인파트너 (Inpartner)",
+        "meta_desc": "인도네시아 경영 전략 수립, 시장 조사, 사업 타당성 조사(FS), 투자 자문 및 기업 역량 강화 프로그램 등 인파트너의 전방위 B2B 전문 자문 서비스를 확인하십시오.",
+        "h1": "인파트너 B2B 종합 컨설팅 & 투자 솔루션"
+      },
+      "business_consulting": {
+        "url": "/ko/services/business-management-consulting",
+        "title": "인도네시아 시장 진출 및 경영 전략 컨설팅 | 인파트너",
+        "meta_desc": "한국 기업을 위한 인도네시아 시장 진출 전략, 현지 규제 분석, 시장 조사, 경쟁사 분석 및 현지 법인 운영 최적화 컨설팅을 제공합니다.",
+        "h1": "인도네시아 시장 진출 및 경영 전략 컨설팅"
+      },
+      "investment": {
+        "url": "/ko/services/investment",
+        "title": "인도네시아 기업 투자 자문 및 타당성 조사(FS) | 인파트너",
+        "meta_desc": "인도네시아 인프라, 신재생에너지, M&A 실사(Due Diligence), 사업 타당성 조사(FS) 및 투자 티저 작성을 전문으로 하는 종합 투자 자문 서비스입니다.",
+        "h1": "인도네시아 투자 자문 및 자본 솔루션"
+      },
+      "projects": {
+        "url": "/ko/project",
+        "title": "주요 프로젝트 실적 및 포트폴리오 | 인파트너 인도네시아",
+        "meta_desc": "인도네시아 고속도로(BUJT) 실사, BRT 타당성 조사, 신재생에너지 재무 모델링, 투자 티저 등 인파트너가 성공적으로 완수한 공공·민간 프로젝트 실적입니다.",
+        "h1": "검증된 프로젝트 수행 실적 및 포트폴리오"
+      },
+      "contact": {
+        "url": "/ko/contact",
+        "title": "상담 문의 및 오피스 안내 | 인파트너 (자카르타·수라바야)",
+        "meta_desc": "인파트너 자카르타 본사 및 수라바야 지사 연락처. 한국 기업의 인도네시아 진출, 사업 타당성 조사, 투자 자문 상담을 신속하게 접수하십시오.",
+        "h1": "인파트너 프로젝트 상담 및 문의"
+      }
+    }
+  },
+  "search_and_replace_copywriting_diffs": [
+    {
+      "file": "pages/services.js",
+      "target": "Busines and Management Consulting",
+      "replacement": "Business and Management Consulting"
+    },
+    {
+      "file": "pages/index.js & pages/about.js",
+      "target": "Go Beyond Than Just Consultancy",
+      "replacement": "Going Beyond Conventional Consulting"
+    },
+    {
+      "file": "pages/index.js & pages/about.js",
+      "target": "take a holistic approach to identify the problem and give you a home run.",
+      "replacement": "take a comprehensive approach to diagnose business challenges and deliver measurable, high-impact outcomes."
+    },
+    {
+      "file": "pages/index.js & pages/about.js",
+      "target": "provide capacity building of the MSME sector in East Jave.",
+      "replacement": "providing capacity building for the MSME sector in East Java."
+    },
+    {
+      "file": "pages/about.js",
+      "target": "PT Inpartrner Optima Integra",
+      "replacement": "PT Inpartner Optima Integra"
+    },
+    {
+      "file": "pages/about.js",
+      "target": "Founded by professionals since 2019",
+      "replacement": "Founded in 2009 by experienced corporate professionals"
+    },
+    {
+      "file": "pages/services.js",
+      "target": "We also recommends alternative strategies to meet the goals",
+      "replacement": "We also recommend innovative strategic alternatives to achieve key organizational milestones."
+    },
+    {
+      "file": "pages/services.js",
+      "target": "We experienced professionals can work closely with clients",
+      "replacement": "Our experienced investment advisors work closely with corporate and institutional clients"
+    },
+    {
+      "file": "pages/contact.js",
+      "target": "What Can We Help?",
+      "replacement": "How Can We Assist Your Business?"
+    }
+  ],
+  "portfolio_translations": [
+    {
+      "indonesian_original": "Penyusunan Laporan Sektor Riil pada Badan Usaha Jalan Tol (BUJT)",
+      "english_translation": "Real Sector Comprehensive Advisory & Impact Assessment for Toll Road Concessionaires (BUJT)",
+      "korean_translation": "인도네시아 유료도로공사(BUJT) 실물경제 부문 실사 및 자문 보고서 작성"
+    },
+    {
+      "indonesian_original": "Penyusunan Kajian Review Feasibility Study (FS) Bandung Rapit Transit (BRT) Bandung Raya",
+      "english_translation": "Feasibility Study (FS) Review & Economic Viability Analysis for Greater Bandung Rapid Transit (BRT)",
+      "korean_translation": "반둥 광역 간선급행버스체계(BRT) 사업 타당성 조사(FS) 검토 및 경제성 분석"
+    },
+    {
+      "indonesian_original": "Penyusunan Kajian Penyertaan Modal pada Jalan Tol Getaci",
+      "english_translation": "Capital Injection Feasibility & Financial Assessment for Gedebage–Tasikmalaya–Cilacap (Getaci) Toll Road",
+      "korean_translation": "게타치(Getaci) 고속도로 지분 투자 및 출자 타당성 평가 자문"
+    },
+    {
+      "indonesian_original": "Penyusunan Investment Teaser Kazuhiro",
+      "english_translation": "Strategic Investment Teaser & Capital Sourcing Formulation for Project Kazuhiro",
+      "korean_translation": "카즈히로(Kazuhiro) 프로젝트 투자 유치 티저(Teaser) 및 재무 구조 설계"
+    },
+    {
+      "indonesian_original": "Penyusunan Kebijakan dan SOP Environmental, Social and Governance (ESG)",
+      "english_translation": "Corporate ESG Policy Framework & Standard Operating Procedures (SOP) Development",
+      "korean_translation": "기업 ESG 정책 프레임워크 수립 및 표준운영절차(SOP) 구축 자문"
+    },
+    {
+      "indonesian_original": "Jasa Konsultansi Penyusunan Investment Teaser dan Perhitungan Valuasi",
+      "english_translation": "Corporate Valuation Modeling & Investment Teaser Preparation for Private Equity Placement",
+      "korean_translation": "기업 가치평가(Valuation) 모델링 및 사모펀드 투자 유치 티저 작성"
+    },
+    {
+      "indonesian_original": "Jasa Konsultansi Penyusunan Pitch Deck dan business plan untuk pengembangan bisnis Falga Group",
+      "english_translation": "Corporate Business Plan & Investor Pitch Deck Formulation for Falga Group Expansion",
+      "korean_translation": "팔가(Falga) 그룹 사업 확장용 비즈니스 플랜 수립 및 투자자 피치덱 제작"
+    },
+    {
+      "indonesian_original": "Kajian Penyediaan Infrastruktur Tempat Pengolahan dan Pemrosesan Akhir Sampah (TPPAS) Regional Lulut Nambo",
+      "english_translation": "Regional Waste Management & Processing Infrastructure (TPPAS Lulut Nambo) Feasibility Review",
+      "korean_translation": "룰룻 남보(Lulut Nambo) 지역 폐기물 종합 처리 인프라 타당성 검토"
+    }
+  ]
+}

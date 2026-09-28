@@ -1,0 +1,857 @@
+{
+    "project": "Inpartner",
+    "domain": "https://inpartner.id/",
+    "language": "Korean",
+    "locale": "ko-KR",
+    "market": "South Korea",
+    "strategy": {
+        "primary_focus": [
+            "비즈니스 및 경영 컨설팅 (Business & Management Consulting)",
+            "투자 자문 및 솔루션 (Investment Advisory & Solutions)"
+        ],
+        "secondary_focus": [
+            "사업 전략 및 현지화 (Business Strategy & Localization)",
+            "조직 성과 및 역량 강화 (Organizational Performance & Capacity Building)",
+            "운영 및 프로세스 최적화 (Operations & Process Optimization)",
+            "시장 조사 및 산업 분석 (Market Research & Industry Analysis)",
+            "성장 전략 및 시장 진출 (Growth Strategy & Market Entry)",
+            "대체 투자 솔루션 (Alternative Investment Solutions)"
+        ],
+        "geo_focus": [
+            "대한민국 (South Korea)",
+            "인도네시아 (Indonesia)",
+            "자카르타 (Jakarta)"
+        ],
+        "principle": "한국 기업의 인도네시아 진출 및 투자 의사결정에 직결되는 검색 의도(Search Intent), 비즈니스 연관성, 서비스 적합성, 타깃 고객(C-Level/투자책임자), 전환 잠재력을 단순 검색량(Search Volume)보다 절대적으로 우선시한다."
+    },
+    "primary_keywords": [
+        {
+            "keyword": "인도네시아 비즈니스 컨설팅",
+            "english_meaning": "Indonesia business consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "executives",
+                "corporate_decision_makers",
+                "global_expansion_directors"
+            ],
+            "recommended_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 경영 컨설팅",
+            "english_meaning": "Indonesia management consulting",
+            "intent": "commercial",
+            "audience": [
+                "executives",
+                "corporate_decision_makers",
+                "organizations"
+            ],
+            "recommended_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 시장 진출 컨설팅",
+            "english_meaning": "Indonesia market entry consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "executives",
+                "corporate_decision_makers"
+            ],
+            "recommended_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 사업 전략 컨설팅",
+            "english_meaning": "Indonesia business strategy consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "executives",
+                "corporate_decision_makers"
+            ],
+            "recommended_page": "/ko/services/business-management-consulting/business-strategy",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 컨설팅",
+            "english_meaning": "Indonesia consulting",
+            "intent": "commercial",
+            "audience": [
+                "business_owners",
+                "corporate_clients"
+            ],
+            "recommended_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 투자 자문",
+            "english_meaning": "Indonesia investment advisory",
+            "intent": "commercial",
+            "audience": [
+                "institutional_investors",
+                "corporate_clients",
+                "family_offices"
+            ],
+            "recommended_page": "/ko/services/investment",
+            "priority": "P0",
+            "validation": "인도네시아 금융 규제(OJK) 및 외국인직접투자(BKPM) 가이드라인에 부합하는 공식 서비스 용어 확인."
+        },
+        {
+            "keyword": "인도네시아 투자 컨설팅",
+            "english_meaning": "Indonesia investment consulting",
+            "intent": "commercial",
+            "audience": [
+                "investors",
+                "corporate_clients",
+                "institutional_clients"
+            ],
+            "recommended_page": "/ko/services/investment",
+            "priority": "P0",
+            "validation": "네이버 및 구글 코리아 B2B 검색어 클러스터 반영."
+        },
+        {
+            "keyword": "인도네시아 투자 솔루션",
+            "english_meaning": "Indonesia investment solutions",
+            "intent": "commercial",
+            "audience": [
+                "corporate_clients",
+                "institutional_clients",
+                "investors"
+            ],
+            "recommended_page": "/ko/services/investment",
+            "priority": "P0"
+        }
+    ],
+    "business_management_consulting": {
+        "business_strategy": [
+            {
+                "keyword": "인도네시아 사업 전략 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P0"
+            },
+            {
+                "keyword": "인도네시아 경영 전략 컨설턴트",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 전략 기획 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "동남아 비즈니스 전략 자문",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "기업 전략 컨설팅 인도네시아",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 중장기 전략 기획 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            }
+        ],
+        "organizational_performance": [
+            {
+                "keyword": "인도네시아 조직 성과 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 현지 법인 조직 관리",
+                "intent": "informational_commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "조직 효율성 및 거버넌스 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "organizations"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "기업 생산성 향상 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "executives"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 기업 역량 강화 프로그램",
+                "intent": "commercial",
+                "audience": [
+                    "hr_directors",
+                    "executives"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "operations": [
+            {
+                "keyword": "인도네시아 비즈니스 운영 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 현지 사업 운영 자문",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "운영 프로세스 최적화 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 비즈니스 프로세스 개선",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "현지 공급망 및 운영 효율화 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "market_research": [
+            {
+                "keyword": "인도네시아 시장 조사 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 시장 조사 전문 기업",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 시장 분석 컨설턴트",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 산업 분석 보고서 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 경쟁사 분석 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers",
+                    "investors"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 진출 타당성 시장 분석",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "growth_strategy": [
+            {
+                "keyword": "인도네시아 성장 전략 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 비즈니스 확장 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "해외 시장 진출 성장 자문",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "executives"
+                ],
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 시장 점유율 확대 전략",
+                "intent": "commercial",
+                "audience": [
+                    "executives",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2",
+                "validation": "서비스 범위 공식 확인."
+            },
+            {
+                "keyword": "인도네시아 현지 파트너 발굴 및 제휴 자문",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "동남아 사업 확장 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "business_owners",
+                    "corporate_clients"
+                ],
+                "priority": "P2"
+            }
+        ]
+    },
+    "investment": {
+        "core": [
+            {
+                "keyword": "인도네시아 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0",
+                "validation": "OJK/BKPM 규제 하의 공식 자문 서비스 범위 확인."
+            },
+            {
+                "keyword": "인도네시아 투자 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0",
+                "validation": "공식 서비스 명칭 확인."
+            },
+            {
+                "keyword": "인도네시아 투자 솔루션",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors",
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P0"
+            },
+            {
+                "keyword": "인도네시아 자본 투자 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients",
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "공식 서비스 명칭 확인."
+            },
+            {
+                "keyword": "인도네시아 투자 전략 자문",
+                "intent": "informational_commercial",
+                "audience": [
+                    "investors",
+                    "corporate_clients"
+                ],
+                "priority": "P1"
+            }
+        ],
+        "corporate": [
+            {
+                "keyword": "인도네시아 기업 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients",
+                    "executives"
+                ],
+                "priority": "P1",
+                "validation": "서비스 가용성 확인."
+            },
+            {
+                "keyword": "인도네시아 기업 투자 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients"
+                ],
+                "priority": "P1",
+                "validation": "서비스 가용성 확인."
+            },
+            {
+                "keyword": "인도네시아 기업 투자 전략",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_decision_makers"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "한국 기업 인도네시아 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "corporate_clients"
+                ],
+                "priority": "P2",
+                "validation": "외국인직접투자(FDI) 자문 범위 확인."
+            }
+        ],
+        "institutional": [
+            {
+                "keyword": "인도네시아 기관 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "서비스 가용성 확인."
+            },
+            {
+                "keyword": "인도네시아 기관 투자 컨설팅",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P1",
+                "validation": "서비스 가용성 확인."
+            },
+            {
+                "keyword": "인도네시아 인프라 및 대체 투자 솔루션",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients"
+                ],
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 신재생에너지 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "institutional_clients",
+                    "corporate_clients"
+                ],
+                "priority": "P2"
+            }
+        ],
+        "individual": [
+            {
+                "keyword": "인도네시아 자산가 투자 솔루션",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors"
+                ],
+                "priority": "P1",
+                "validation": "고액자산가(HNWI) 대상 자문 제공 여부 확인."
+            },
+            {
+                "keyword": "인도네시아 개인 투자 자문",
+                "intent": "commercial",
+                "audience": [
+                    "individual_investors"
+                ],
+                "priority": "P2",
+                "validation": "금융 규제 및 라이선스 범위 확인."
+            }
+        ]
+    },
+    "advanced_service_keywords": {
+        "status": "validation_required_before_website_targeting",
+        "reason": "이 키워드들은 인파트너의 전문 실적(도로공사 BUJT 실사, BRT 타당성 조사, 알제 투자 티저 등)과 깊이 연관되어 있으나, 공식 웹사이트의 정규 타깃 서비스 페이지로 론칭하기 전 경영진의 최종 확인이 필요합니다.",
+        "keywords": [
+            {
+                "keyword": "인도네시아 자본시장 자문",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 자본시장 컨설팅",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 듀딜리전스 실사 자문",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 재무 실사(FDD)",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 비즈니스 실사(CDD)",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 투자 실사 자문",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 사업 타당성 조사 컨설턴트",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 사업 타당성 조사(FS)",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 투자 타당성 분석",
+                "priority": "P1"
+            },
+            {
+                "keyword": "인도네시아 재무 분석 컨설팅",
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 금융 자문",
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 기업 기획 자문",
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 기업 전략 컨설턴트",
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 IPO 자문",
+                "priority": "P2"
+            },
+            {
+                "keyword": "인도네시아 프리 IPO(Pre-IPO) 자문",
+                "priority": "P2"
+            }
+        ]
+    },
+    "geo_keywords": [
+        {
+            "keyword": "인도네시아 비즈니스 컨설팅",
+            "target_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 경영 컨설팅",
+            "target_page": "/ko/services/business-management-consulting",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인도네시아 사업 전략 컨설팅",
+            "target_page": "/ko/services/business-management-consulting",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 투자 자문",
+            "target_page": "/ko/services/investment",
+            "priority": "P0",
+            "validation": "공식 용어 확인."
+        },
+        {
+            "keyword": "인도네시아 투자 컨설팅",
+            "target_page": "/ko/services/investment",
+            "priority": "P1",
+            "validation": "공식 용어 확인."
+        },
+        {
+            "keyword": "자카르타 비즈니스 컨설팅",
+            "target_page": "/ko/services/business-management-consulting",
+            "priority": "P2"
+        },
+        {
+            "keyword": "자카르타 경영 컨설팅",
+            "target_page": "/ko/services/business-management-consulting",
+            "priority": "P2"
+        },
+        {
+            "keyword": "자카르타 투자 자문",
+            "target_page": "/ko/services/investment",
+            "priority": "P2",
+            "validation": "공식 용어 확인."
+        }
+    ],
+    "informational_keywords": [
+        {
+            "keyword": "인도네시아 시장 진출 전략",
+            "intent": "informational_commercial",
+            "recommended_content": "인도네시아 시장 진출 종합 전략 가이드",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 사업 타당성 조사",
+            "intent": "informational_commercial",
+            "recommended_content": "인도네시아 사업 타당성 조사(FS) 수행 절차 및 방법론",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 시장 조사",
+            "intent": "informational",
+            "recommended_content": "인도네시아 B2B 산업 리서치 및 시장 분석 인사이트",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 시장 진입 가이드",
+            "intent": "informational_commercial",
+            "recommended_content": "한국 기업을 위한 인도네시아 진출 성공 전략",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 외투법인(PT PMA) 규제",
+            "intent": "informational_commercial",
+            "recommended_content": "인도네시아 외국인 직접투자 및 법인 규제 가이드",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 투자 자문 가이드",
+            "intent": "informational_commercial",
+            "recommended_content": "인도네시아 기업 투자 및 대체 투자 실사 가이드",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인도네시아 투자 실사(Due Diligence)",
+            "intent": "informational_commercial",
+            "recommended_content": "인도네시아 M&A 및 프로젝트 실사(FDD/CDD) 핵심 체크리스트",
+            "priority": "P2"
+        },
+        {
+            "keyword": "인도네시아 사업 확장 전략",
+            "intent": "informational_commercial",
+            "recommended_content": "동남아시아 신규 비즈니스 스케일업 모델",
+            "priority": "P2"
+        },
+        {
+            "keyword": "인도네시아 기업 경영 기획",
+            "intent": "informational_commercial",
+            "recommended_content": "신흥시장 진출 기업의 중장기 경영 전략 기획",
+            "priority": "P2"
+        }
+    ],
+    "branded_keywords": [
+        {
+            "keyword": "인파트너",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인파트너 인도네시아",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "PT Inpartner Optima Integra",
+            "intent": "navigational",
+            "priority": "P0"
+        },
+        {
+            "keyword": "인파트너 컨설팅",
+            "intent": "navigational",
+            "priority": "P1",
+            "validation": "대외 공식 브랜드명으로 인정될 경우에만 적용."
+        },
+        {
+            "keyword": "인파트너 투자자문",
+            "intent": "navigational_commercial",
+            "priority": "P1"
+        },
+        {
+            "keyword": "인파트너 비즈니스 컨설팅",
+            "intent": "navigational_commercial",
+            "priority": "P1"
+        }
+    ],
+    "negative_or_low_priority_targets": [
+        "인도네시아 여행",
+        "인도네시아 관광",
+        "발리 풀빌라",
+        "인도네시아 취업",
+        "인도네시아 어학연수",
+        "개인 주식 리딩방",
+        "비트코인 코인 투자",
+        "인도네시아 국제결혼",
+        "인도네시아 환율 계산기",
+        "개인 펀드 추천",
+        "소액 개인 재테크",
+        "개인 가상화폐",
+        "인도네시아 이민"
+    ],
+    "keyword_mapping_rules": {
+        "homepage": [
+            "인도네시아 비즈니스 컨설팅",
+            "인도네시아 경영 컨설팅",
+            "인도네시아 시장 진출 컨설팅",
+            "인도네시아 투자 솔루션"
+        ],
+        "business_management_consulting": [
+            "인도네시아 비즈니스 컨설팅",
+            "인도네시아 경영 컨설팅",
+            "인도네시아 시장 진출 컨설팅",
+            "인도네시아 사업 전략 컨설팅"
+        ],
+        "business_strategy": [
+            "인도네시아 사업 전략 컨설팅",
+            "인도네시아 경영 전략 컨설턴트",
+            "인도네시아 전략 기획 컨설팅",
+            "기업 전략 컨설팅 인도네시아"
+        ],
+        "organizational_performance": [
+            "인도네시아 조직 성과 컨설팅",
+            "조직 효율성 컨설팅",
+            "기업 생산성 향상 컨설팅"
+        ],
+        "operations": [
+            "인도네시아 비즈니스 운영 컨설팅",
+            "인도네시아 현지 사업 운영 자문",
+            "운영 프로세스 최적화 컨설팅",
+            "인도네시아 비즈니스 프로세스 개선"
+        ],
+        "market_research": [
+            "인도네시아 시장 조사 컨설팅",
+            "인도네시아 시장 조사 전문 기업",
+            "인도네시아 시장 분석 컨설턴트",
+            "인도네시아 산업 분석 보고서 컨설팅"
+        ],
+        "growth_strategy": [
+            "인도네시아 성장 전략 컨설팅",
+            "인도네시아 비즈니스 확장 컨설팅",
+            "해외 시장 진출 성장 자문",
+            "동남아 사업 확장 컨설팅"
+        ],
+        "investment": [
+            "인도네시아 투자 자문",
+            "인도네시아 투자 컨설팅",
+            "인도네시아 투자 솔루션",
+            "인도네시아 자본 투자 컨설팅"
+        ],
+        "corporate_investment": [
+            "인도네시아 기업 투자 자문",
+            "인도네시아 기업 투자 컨설팅",
+            "인도네시아 기업 투자 전략"
+        ],
+        "institutional_investment": [
+            "인도네시아 기관 투자 자문",
+            "인도네시아 기관 투자 컨설팅",
+            "인도네시아 인프라 및 대체 투자 솔루션"
+        ],
+        "about": [
+            "인파트너",
+            "PT Inpartner Optima Integra",
+            "인파트너 인도네시아"
+        ],
+        "contact": [
+            "인파트너 문의",
+            "인파트너 인도네시아 연락처",
+            "인파트너 자카르타 본사"
+        ],
+        "insights": [
+            "인도네시아 시장 진출 전략",
+            "인도네시아 사업 타당성 조사",
+            "인도네시아 투자 실사(Due Diligence)",
+            "인도네시아 외투법인(PT PMA) 규제",
+            "인도네시아 대체 투자 동향"
+        ]
+    },
+    "implementation_rules": [
+        "클라이언트 사이드 구글 번역 위젯에 의존하지 마십시오. 모든 한국어 페이지는 /ko/* 하위 경로(subpath)에서 고유한 정적 또는 서버 렌더링 HTML로 서빙되어야 합니다.",
+        "네이버는 hreflang 태그를 지원하지 않으므로, 정적 HTML 상에서 <html lang=\"ko\"> 및 <meta http-equiv=\"content-language\" content=\"ko-kr\">을 반드시 명시하고 네이버 서치어드바이저에 직접 사이트 및 사이트맵을 등록해야 합니다.",
+        "모든 키워드를 홈페이지에 한꺼번에 배치하지 마십시오. 하나의 핵심 검색 의도(Search Intent)는 하나의 전용 타깃 페이지와 1:1로 매핑되어야 합니다.",
+        "비즈니스 컨설팅 페이지와 투자 서비스 페이지 간의 키워드 카니발라이제이션(Keyword Cannibalization)을 방지하십시오.",
+        "단순히 키워드가 존재한다고 해서 페이지를 만들지 마십시오. 실제로 공식 제공되는 서비스에 대해서만 전용 랜딩 페이지를 개설하십시오.",
+        "한국어 B2B 카피라이팅은 전문성과 신뢰도를 극대화하기 위해 격식체인 '하십시오체'를 일관되게 사용하십시오.",
+        "영문 관용구의 어색한 직역(예: '홈런을 친다'는 야구 은어 등)을 즉시 배제하고 정제된 비즈니스 용어(예: '비즈니스 목표 달성')로 대체하십시오.",
+        "/project 페이지의 인도네시아어 프로젝트 원문 제목을 한국 기업 고객이 직관적으로 이해할 수 있는 전문 한국어 프로젝트명 및 산업 태그로 번역하십시오.",
+        "네이버 및 구글의 AI 검색(GEO) 인지를 위해 Organization, Service, FAQPage 등 Schema.org JSON-LD 구조화 데이터를 한국어 값으로 웹페이지 헤더에 주입하십시오.",
+        "서버 WAF(웹 방화벽) 및 클라우드플레어 보안 규칙에서 네이버 검색 로봇(User-Agent: Yeti/1.1)과 구글봇(Googlebot)의 자동 크롤링을 전면 허용(화이트리스트)하십시오.",
+        "모든 상업적 랜딩 페이지는 명확한 검색 의도, 타깃 독자, 차별화된 가치 제안, 그리고 명확한 전환 CTA(이메일/문의폼)를 갖추어야 합니다.",
+        "사이트 확장 전 양방향 hreflang (en, ko, x-default) 및 자체 참조 canonical 태그를 완벽히 구축하여 중복 콘텐츠 페널티를 사전에 차단하십시오."
+    ],
+    "validation_required": [
+        "네이버 서치어드바이저 수집 주기 및 색인 현황 진단",
+        "네이버 데이터랩 및 구글 트렌드 상의 인도네시아 B2B 진출 쿼리 검색량",
+        "구글 서치 콘솔의 /ko/* URL 색인 및 크롤링 상태",
+        "네이버 VIEW(블로그/카페) 탭 및 웹사이트 탭 상의 인도네시아 컨설팅 경쟁 현황",
+        "인도네시아 금융감독청(OJK) 및 투자부(BKPM) 규정상의 공식 자문 서비스 명칭 적합성",
+        "공식 법인명 표기 기준 (PT Inpartner Optima Integra / Inpartner / 인파트너)",
+        "한국 기업 고객 유입을 위한 전담 소통 채널(카카오톡 채널 또는 전담 이메일) 개설 여부",
+        "한국 접속 환경에서의 Core Web Vitals 및 Emotion CSS SSR 로딩 속도"
+    ]
+}

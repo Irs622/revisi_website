@@ -1,0 +1,350 @@
+{
+  "project": "Inpartner",
+  "domain": "https://inpartner.id/",
+  "language": "en",
+  "locale": "en-US",
+  "market": "Indonesia & Global Enterprise / Foreign Investors",
+  "business_sectors": [
+    "Business & Management Consulting",
+    "Investment Advisory"
+  ],
+  "audit_version": "1.0.0",
+  "audited_at": "2026-09-28",
+  "audit_summary": {
+    "overall_health_score": "32/100",
+    "status": "HIGH_RISK",
+    "critical_bottlenecks": [
+      "Core services are trapped in hash anchors (/services#...) rather than dedicated, indexable URLs.",
+      "100% missing canonical tags and zero hreflang declarations across all public pages.",
+      "WAF / Cloudflare challenge page intercepts non-browser requests to robots.txt and sitemap.xml.",
+      "Damaging typos and grammatical flaws in primary service headings ('Busines', 'give you a home run', 'East Jave').",
+      "90% of delivered projects on /project are titled in raw Indonesian, creating friction for foreign institutional investors.",
+      "Complete absence of Schema.org JSON-LD structured data (Organization, Service, FAQPage)."
+    ],
+    "core_strategy": "Migrate /services hash anchors to standalone URLs, fix all typos and colloquial slang to establish executive B2B tone, translate portfolio into bankable English, inject JSON-LD schemas for AI search engine discoverability, and resolve the heading hierarchy from <h5> to semantic H1/H2/H3."
+  },
+  "technical_seo_configuration": {
+    "url_architecture": {
+      "type": "standalone_paths",
+      "recommended_routes": {
+        "homepage": "/",
+        "about": "/about",
+        "services_hub": "/services",
+        "business_management_consulting": "/services/business-management-consulting",
+        "investment": "/services/investment",
+        "capacity_building": "/services/capacity-building",
+        "sector_hub": "/sector",
+        "sector_infrastructure": "/sector/infrastructure",
+        "sector_renewable_energy": "/sector/renewable-energy",
+        "sector_alternative_investment": "/sector/alternative-investment",
+        "sector_esg": "/sector/environmental-social-and-governance",
+        "projects": "/project",
+        "insights_blog": "/blog",
+        "contact": "/contact"
+      }
+    },
+    "canonical_implementation": {
+      "rule": "Every English page must self-reference its own absolute URL as canonical",
+      "example": "<link rel=\"canonical\" href=\"https://inpartner.id/services/business-management-consulting\" />"
+    },
+    "hreflang_implementation": {
+      "rules": "Must declare bidirectional alternates between English and Korean",
+      "template": [
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://inpartner.id{path}"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "ko",
+          "href": "https://inpartner.id/ko{path}"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://inpartner.id{path}"
+        }
+      ]
+    },
+    "robots_txt_and_waf": {
+      "status": "Must whitelist verified search engine crawlers (Googlebot, Bingbot, Yeti) to bypass Cloudflare/WAF JS challenges",
+      "sitemap_directive": "Sitemap: https://inpartner.id/sitemap.xml"
+    }
+  },
+  "page_level_seo_specifications": {
+    "homepage": {
+      "url": "/",
+      "current_title": "Business Consultant Company, Jakarta, Indonesia | Inpartner",
+      "recommended_title": "Business & Management Consulting Jakarta, Indonesia | Inpartner",
+      "current_meta_desc": "Inpartner are The Most Trusted Consulting Partner To help create positive and endure changes in Local and Global Coverage",
+      "recommended_meta_desc": "Inpartner is a leading management consulting and investment advisory firm in Jakarta and Surabaya, helping enterprises drive growth, optimize operations, and secure capital.",
+      "recommended_h1": "Strategic Business Consulting & Investment Solutions in Indonesia",
+      "recommended_h2": [
+        "About Inpartner Consulting",
+        "Core Advisory Pillars",
+        "Our Services & Industry Practice",
+        "Sectors & Thematic Coverage"
+      ]
+    },
+    "about_us": {
+      "url": "/about",
+      "current_title": "The Most Trusted Consulting Partner | Inpartner",
+      "recommended_title": "About Inpartner | Management Consulting & Investment Advisory",
+      "current_meta_desc": "Through our Consultation Services, we take a holistic approach to identify the right problem and give clear guides to unleash the power of your business for a brighter future",
+      "recommended_meta_desc": "Established in 2009, PT Inpartner Optima Integra provides strategic management consulting, feasibility studies, and investment advisory for mid-to-large corporations in Indonesia.",
+      "recommended_h1": "About Inpartner: Trusted Management Consulting in Indonesia",
+      "recommended_h2": [
+        "Our Strategic Vision & Mission",
+        "Corporate History & Transformation (2009–Present)",
+        "Core Values & Operating Principles",
+        "Diversity & Sustainable Commitment",
+        "Leadership & Consulting Team"
+      ]
+    },
+    "services_hub": {
+      "url": "/services",
+      "current_title": "Business and Management Consulting, Investment, Capacity Building",
+      "recommended_title": "Consulting & Investment Advisory Services | Inpartner Indonesia",
+      "current_meta_desc": "Inpartner Services Cover Business and Management Consulting, Investment and Capacity Building (Inpartner Academy)",
+      "recommended_meta_desc": "Explore Inpartner's comprehensive advisory services: corporate strategy, operations, market research, investment advisory, feasibility studies, and executive capacity building.",
+      "recommended_h1": "Business Consulting & Investment Advisory Services",
+      "recommended_h2": [
+        "Business & Management Consulting",
+        "Investment Advisory & Capital Solutions",
+        "Executive Capacity Building (Inpartner Academy)"
+      ]
+    },
+    "projects": {
+      "url": "/project",
+      "current_title": "Project & tender Inpartner",
+      "recommended_title": "Portfolio & Completed Advisory Projects | Inpartner Indonesia",
+      "current_meta_desc": "Inpartner involves the planning, organizing, and overseeing of resources to achieve a specific goal or objective within a defined timeline and budget",
+      "recommended_meta_desc": "Discover Inpartner's verified track record: feasibility studies for toll roads, BRT transportation, renewable energy financial projections, and corporate investment teasers.",
+      "recommended_h1": "Proven Advisory Track Record & Delivered Projects",
+      "recommended_h2": [
+        "Infrastructure & Public Sector Advisory",
+        "Feasibility Studies & Investment Due Diligence",
+        "Alternative Investment & Private Equity Sourcing"
+      ]
+    },
+    "insights_blog": {
+      "url": "/blog",
+      "current_title": "Insight & Update",
+      "recommended_title": "Indonesia Business & Investment Insights | Inpartner Insights",
+      "current_meta_desc": "Inpartner involves the planning, organizing, and overseeing of resources to achieve a specific goal or objective within a defined timeline and budget",
+      "recommended_meta_desc": "Read authoritative analyses, market intelligence, and regulatory updates on Indonesian business expansion, foreign direct investment (FDI), and industrial trends.",
+      "recommended_h1": "Insights, Market Intelligence & Industry Updates",
+      "recommended_h2": [
+        "Featured Strategic Insights",
+        "Market Entry & Regulatory Analysis",
+        "Investment & Infrastructure Trends"
+      ]
+    },
+    "contact": {
+      "url": "/contact",
+      "current_title": "Get in Touch with Inpartner",
+      "recommended_title": "Contact Us | Inpartner Consulting Offices Jakarta & Surabaya",
+      "current_meta_desc": "Get in Touch with Inpartner",
+      "recommended_meta_desc": "Connect with Inpartner's senior consultants in Jakarta and Surabaya. Request a consultation for strategic business management, feasibility studies, or investment advisory.",
+      "recommended_h1": "Contact Inpartner Consulting Jakarta & Surabaya",
+      "recommended_h2": [
+        "Schedule a Confidential Consultation",
+        "Our Corporate Office Locations"
+      ]
+    }
+  },
+  "copywriting_and_proofreading_corrections": [
+    {
+      "location": "/services (Card Heading 1)",
+      "current_flaw": "Busines and Management Consulting",
+      "corrected_copy": "Business and Management Consulting",
+      "category": "Typo / Spelling"
+    },
+    {
+      "location": "Homepage Hero & /about",
+      "current_flaw": "Go Beyond Than Just Consultancy",
+      "corrected_copy": "Going Beyond Conventional Consulting",
+      "category": "Grammar"
+    },
+    {
+      "location": "Homepage Hero & /about",
+      "current_flaw": "take a holistic approach to identify the problem and give you a home run.",
+      "corrected_copy": "take a comprehensive approach to diagnose organizational challenges and deliver measurable business outcomes.",
+      "category": "Tone / Slang Elimination"
+    },
+    {
+      "location": "Homepage & /about",
+      "current_flaw": "provide capacity building of the MSME sector in East Jave.",
+      "corrected_copy": "providing capacity building for MSMEs across East Java.",
+      "category": "Typo / Geography"
+    },
+    {
+      "location": "/about History Section",
+      "current_flaw": "INPARTNER (PT Inpartrner Optima Integra)",
+      "corrected_copy": "INPARTNER (PT Inpartner Optima Integra)",
+      "category": "Legal Entity Typo"
+    },
+    {
+      "location": "Homepage vs /about",
+      "current_flaw": "Homepage says 'which established in 2009', About page hero says 'Founded by professionals since 2019'",
+      "corrected_copy": "Founded in 2009 by experienced corporate professionals...",
+      "category": "Fact Consistency"
+    },
+    {
+      "location": "/services Business Consulting Copy",
+      "current_flaw": "We also recommends alternative strategies to meet the goals",
+      "corrected_copy": "We also recommend innovative strategic alternatives to achieve key organizational milestones.",
+      "category": "Subject-Verb Agreement"
+    },
+    {
+      "location": "/services Investment Copy",
+      "current_flaw": "We experienced professionals can work closely with clients...",
+      "corrected_copy": "Our experienced investment advisors work closely with corporate and institutional clients...",
+      "category": "Grammar / Sentence Structure"
+    },
+    {
+      "location": "/services Capacity Building Copy",
+      "current_flaw": "Inpartner capacity building involve... Making positive impacts on the clientele we serves, We helps making business plans and effectively implements, swiftly taking new challenges, develop business relations, creating partnerships",
+      "corrected_copy": "Inpartner's capacity building division delivers executive training, leadership mentoring, and strategic workforce development. We empower organizations to scale operational efficiency, formulate actionable business plans, and forge resilient institutional partnerships.",
+      "category": "Grammar & Parallelism Overhaul"
+    },
+    {
+      "location": "/contact Section Header",
+      "current_flaw": "What Can We Help?",
+      "corrected_copy": "How Can We Assist Your Business?",
+      "category": "Grammar / Professionalism"
+    }
+  ],
+  "portfolio_translations_for_english_site": [
+    {
+      "original_indonesian_title": "Penyusunan Laporan Sektor Riil pada Badan Usaha Jalan Tol (BUJT)",
+      "recommended_english_title": "Real Sector Comprehensive Advisory & Impact Assessment for Toll Road Concessionaires (BUJT)",
+      "sector": "Infrastructure"
+    },
+    {
+      "original_indonesian_title": "Penyusunan Kajian Review Feasibility Study (FS) Bandung Rapit Transit (BRT) Bandung Raya",
+      "recommended_english_title": "Feasibility Study (FS) Review & Economic Viability Analysis for Greater Bandung Rapid Transit (BRT)",
+      "sector": "Infrastructure"
+    },
+    {
+      "original_indonesian_title": "Penyusunan Kajian Penyertaan Modal pada Jalan Tol Getaci",
+      "recommended_english_title": "Capital Injection Feasibility & Financial Assessment for Gedebage–Tasikmalaya–Cilacap (Getaci) Toll Road",
+      "sector": "Alternative Investment"
+    },
+    {
+      "original_indonesian_title": "Penyusunan Investment Teaser Kazuhiro",
+      "recommended_english_title": "Strategic Investment Teaser & Capital Sourcing Formulation for Project Kazuhiro",
+      "sector": "Alternative Investment"
+    },
+    {
+      "original_indonesian_title": "Penyusunan Kebijakan dan SOP Environmental, Social and Governance (ESG)",
+      "recommended_english_title": "ESG Policy Framework & Standard Operating Procedures (SOP) Development for Corporate Governance",
+      "sector": "ESG & Sustainability"
+    },
+    {
+      "original_indonesian_title": "Jasa Konsultansi Penyusunan Investment Teaser dan Perhitungan Valuasi",
+      "recommended_english_title": "Corporate Valuation Modeling & Investment Teaser Preparation for Private Equity Placement",
+      "sector": "Alternative Investment"
+    },
+    {
+      "original_indonesian_title": "Jasa Konsultansi Penyusunan Pitch Deck dan business plan untuk pengembangan bisnis Falga Group",
+      "recommended_english_title": "Corporate Business Plan & Investor Pitch Deck Formulation for Falga Group Business Expansion",
+      "sector": "IT & Infrastructure"
+    },
+    {
+      "original_indonesian_title": "Kajian Penyediaan Infrastruktur Tempat Pengolahan dan Pemrosesan Akhir Sampah (TPPAS) Regional Lulut Nambo",
+      "recommended_english_title": "Regional Waste Management & Processing Infrastructure (TPPAS Lulut Nambo) Feasibility Review",
+      "sector": "Infrastructure / Cleantech"
+    },
+    {
+      "original_indonesian_title": "Jasa Konsultasi Keuangan Project Pembuatan Jalur Pipa Gas",
+      "recommended_english_title": "Project Financial Modeling & Capital Advisory for Industrial Natural Gas Pipeline Development",
+      "sector": "Industrial Energy"
+    }
+  ],
+  "geo_and_ai_search_schemas": {
+    "organization_schema": {
+      "@context": "https://schema.org",
+      "@type": "ConsultingBusiness",
+      "@id": "https://inpartner.id/#organization",
+      "name": "Inpartner",
+      "legalName": "PT Inpartner Optima Integra",
+      "url": "https://inpartner.id/",
+      "logo": "https://inpartner.id/_next/static/media/logo.1853afdf.png",
+      "foundingDate": "2009",
+      "description": "PT Inpartner Optima Integra (Inpartner) is a premier management consulting and investment advisory firm in Indonesia, serving middle and large corporations across infrastructure, energy, and corporate development.",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Pakuwon Tower 10th Floor, Jl. Raya Casablanca Kav. 88",
+          "addressLocality": "South Jakarta",
+          "addressRegion": "DKI Jakarta",
+          "postalCode": "12870",
+          "addressCountry": "ID"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Jemur Sari Street V No. 10",
+          "addressLocality": "Surabaya",
+          "addressRegion": "East Java",
+          "addressCountry": "ID"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-896-2831-0192",
+        "contactType": "corporate inquiries",
+        "email": "corporatesecretary@inpartner.id",
+        "availableLanguage": [
+          "English",
+          "Indonesian"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/inpartner",
+        "https://www.instagram.com/inpartnerconsulting",
+        "https://www.facebook.com/profile.php?id=100092037564577"
+      ]
+    },
+    "service_schema": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Management Consulting & Investment Advisory",
+      "provider": {
+        "@id": "https://inpartner.id/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      }
+    }
+  },
+  "priority_action_matrix": {
+    "P0_critical_immediate": [
+      "Fix spelling typos ('Busines' on /services, 'PT Inpartrner', 'East Jave').",
+      "Eliminate casual baseball slang ('give you a home run') from Homepage and About page.",
+      "Resolve duplicate meta description between /project and /blog.",
+      "Fix missing H1 tag on /contact page.",
+      "Inject self-referencing canonical tags across all pages.",
+      "Whitelist official search engine bots (Googlebot, Bingbot) on Cloudflare/WAF."
+    ],
+    "P1_high_impact_month_1": [
+      "Disentangle /services hash anchors into standalone indexable URLs.",
+      "Refactor heading hierarchy (replace <h5> tags with semantic H2/H3 tags).",
+      "Translate raw Indonesian project titles on /project into professional English.",
+      "Deploy optimized Title Tags and Meta Descriptions on all 7 core pages.",
+      "Inject Organization, Service, and FAQPage Schema.org JSON-LD."
+    ],
+    "P2_medium_impact_month_2": [
+      "Fix 'Meet our Team' dead-end loop by publishing real partner and consultant credentials.",
+      "Publish 3 strategic pillar guides on /blog (PT PMA setup, Feasibility Studies, Clean Energy).",
+      "Add author bylines and credentials to all blog posts for E-E-A-T.",
+      "Implement Open Graph (OG) social card metadata for LinkedIn sharing."
+    ],
+    "P3_long_term_ongoing": [
+      "Build international link acquisition with foreign business associations (BritCham, AmCham, EuroCham).",
+      "Monitor weekly SERP rankings and B2B lead form conversion rates."
+    ]
+  }
+}
