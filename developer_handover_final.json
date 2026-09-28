@@ -366,5 +366,123 @@
       "english_translation": "Regional Waste Management & Processing Infrastructure (TPPAS Lulut Nambo) Feasibility Review",
       "korean_translation": "룰룻 남보(Lulut Nambo) 지역 폐기물 종합 처리 인프라 타당성 검토"
     }
-  ]
+  ],
+  "schemas_json_ld": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "ConsultingBusiness",
+      "@id": "https://inpartner.id/#organization",
+      "name": "Inpartner",
+      "legalName": "PT Inpartner Optima Integra",
+      "url": "https://inpartner.id/",
+      "logo": "https://inpartner.id/_next/static/media/logo.1853afdf.png",
+      "foundingDate": "2009",
+      "description": "PT Inpartner Optima Integra (Inpartner) is a premier management consulting and investment advisory firm in Indonesia, serving middle and large corporations across infrastructure, energy, and corporate development.",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Pakuwon Tower 10th Floor, Jl. Raya Casablanca Kav. 88",
+          "addressLocality": "South Jakarta",
+          "addressRegion": "DKI Jakarta",
+          "postalCode": "12870",
+          "addressCountry": "ID"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Jemur Sari Street V No. 10",
+          "addressLocality": "Surabaya",
+          "addressRegion": "East Java",
+          "addressCountry": "ID"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-896-2831-0192",
+        "contactType": "corporate inquiries",
+        "email": "corporatesecretary@inpartner.id",
+        "availableLanguage": [
+          "English",
+          "Indonesian",
+          "Korean"
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/inpartner",
+        "https://www.instagram.com/inpartnerconsulting",
+        "https://www.facebook.com/profile.php?id=100092037564577"
+      ]
+    },
+    "service": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Management Consulting & Investment Advisory",
+      "provider": {
+        "@id": "https://inpartner.id/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Indonesia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Inpartner Core Advisory Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Business & Management Consulting",
+              "description": "Strategic corporate planning, operational optimization, market research, and competitive intelligence for enterprises in Indonesia."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Investment Advisory & Feasibility Studies",
+              "description": "Financial modeling, project valuation, comprehensive bankable feasibility studies (FS), and private equity investment teasers."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Capacity Building",
+              "description": "Customized C-suite coaching, workforce productivity enhancement, and corporate governance training programs."
+            }
+          }
+        ]
+      }
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What consulting services does Inpartner provide in Indonesia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inpartner provides strategic business and management consulting, investment advisory, market entry feasibility studies, corporate valuation, ESG frameworks, and executive capacity building across Indonesia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are Inpartner's corporate offices located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inpartner operates offices in South Jakarta (Pakuwon Tower, 10th Floor, Casablanca) and Surabaya (Jemur Sari V No. 10, East Java)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Inpartner handle public infrastructure and feasibility studies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Inpartner has delivered major feasibility reviews, financial projections, and real sector evaluations for toll road authorities (BUJT), regional rapid transit (BRT), and renewable energy ventures."
+          }
+        }
+      ]
+    }
+  }
 }

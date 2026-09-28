@@ -131,6 +131,7 @@ Developer disarankan mengeksekusi tugas sesuai urutan sprint prioritas berikut:
 - [ ] **TIKET-15:** Sinkronkan tahun pendirian perusahaan di seluruh situs (homepage menyebut 2009, hero about menyebut 2019). Standardisasi ke 2009.
 - [ ] **TIKET-16:** Tambahkan tag Open Graph (`og:title`, `og:description`, `og:image`, `og:url`) dan Twitter Card di setiap halaman.
 - [ ] **TIKET-17:** Tambahkan nama penulis (*author byline*) dan tanggal update pada artikel-artikel `/blog`.
+- [ ] **TIKET-18:** Audit 3 halaman broken link (404) yang terdeteksi Semrush (3.8%) dan pasang 301 redirect di `next.config.js`.
 
 ---
 
@@ -552,6 +553,42 @@ Suntikkan kode skema ini langsung ke komponen `<Head>` melalui `components/SEO.j
       }
     ]
   }
+}
+</script>
+```
+
+### 8.3. Skema Tanya Jawab (`FAQPage`) - Halaman `/contact` atau `/services`
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What consulting services does Inpartner provide in Indonesia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inpartner provides strategic business and management consulting, investment advisory, market entry feasibility studies, corporate valuation, ESG frameworks, and executive capacity building across Indonesia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are Inpartner's corporate offices located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inpartner operates offices in South Jakarta (Pakuwon Tower, 10th Floor, Casablanca) and Surabaya (Jemur Sari V No. 10, East Java)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Inpartner handle public infrastructure and feasibility studies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Inpartner has delivered major feasibility reviews, financial projections, and real sector evaluations for toll road authorities (BUJT), regional rapid transit (BRT), and renewable energy ventures."
+      }
+    }
+  ]
 }
 </script>
 ```
