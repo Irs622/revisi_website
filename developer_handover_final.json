@@ -9,6 +9,24 @@
   "audit_summary": {
     "korean_health_score": "15/100 (CRITICAL: 0% indexed due to client-side Google Translate widget)",
     "english_health_score": "32/100 (HIGH RISK: Fragmented hash URLs, broken H1-H5 hierarchy, damaging typos)",
+    "semrush_benchmark": {
+      "site_health": "74%",
+      "ai_search_health": "83%",
+      "total_crawled_pages": 80,
+      "pages_with_issues": "76 (95%)",
+      "broken_pages": "3 (3.8%)",
+      "healthy_pages": "1 (1.3%)",
+      "total_errors": 203,
+      "total_warnings": 154,
+      "top_issues": {
+        "duplicate_title_tags": "72 errors (solved by TICKET-03 & TICKET-11)",
+        "duplicate_content_issues": "72 errors (solved by TICKET-03 self-referencing canonicals)",
+        "duplicate_meta_descriptions": "56 errors (solved by TICKET-07 & metadata dictionary)",
+        "missing_meta_descriptions": "16 warnings (solved by TICKET-17 blog excerpt metadata)",
+        "low_word_count_pages": "42 warnings (solved by adding 150-word intro to hub pages)",
+        "broken_pages_404": "3 pages (solved by TICKET-18 301 redirects)"
+      }
+    },
     "target_languages": ["en", "ko"],
     "primary_business_sectors": [
       "Business & Management Consulting",
@@ -36,9 +54,9 @@
       "ticket_id": "TICKET-03",
       "priority": "P0",
       "category": "Technical SEO",
-      "task": "Inject Canonical & Bidirectional Hreflang Tags",
+      "task": "Inject Canonical & Bidirectional Hreflang Tags (Fixes 72 Duplicate Content Errors)",
       "target_files": ["components/SEO.jsx"],
-      "action": "Add self-referencing <link rel=\"canonical\"> on every page and declare bilateral hreflang tags (en, ko, x-default)."
+      "action": "Add self-referencing <link rel=\"canonical\"> on every page and declare bilateral hreflang tags (en, ko, x-default). Eliminates 72 duplicate content errors in Semrush."
     },
     {
       "ticket_id": "TICKET-04",
@@ -68,9 +86,9 @@
       "ticket_id": "TICKET-07",
       "priority": "P0",
       "category": "Metadata Hygiene",
-      "task": "Separate Duplicate Meta Descriptions Between Project & Blog",
+      "task": "Separate Duplicate Meta Descriptions (Fixes 56 Duplicate Meta Errors)",
       "target_files": ["pages/project.js", "pages/blog.js"],
-      "action": "Replace the identical generic project management definition on /project and /blog with distinct, conversion-focused meta descriptions."
+      "action": "Replace the identical generic project management definition on /project and /blog with distinct, conversion-focused meta descriptions. Eliminates 56 duplicate meta description errors in Semrush."
     },
     {
       "ticket_id": "TICKET-08",
@@ -103,13 +121,21 @@
     {
       "ticket_id": "TICKET-11",
       "priority": "P1",
+      "category": "Metadata Deployment",
+      "task": "Deploy Unique Page Titles (Fixes 72 Duplicate Title Errors)",
+      "target_files": ["components/SEO.jsx", "pages/*"],
+      "action": "Deploy unique page titles across all pages as specified in metadata_dictionary. Eliminates 72 duplicate title errors in Semrush."
+    },
+    {
+      "ticket_id": "TICKET-12",
+      "priority": "P1",
       "category": "Content & Authority",
       "task": "Translate Portfolio Project Titles on English Site",
       "target_files": ["pages/project.js", "pages/ko/project.js"],
       "action": "Translate raw Indonesian project titles (BUJT, BRT, Getaci) into professional English and Korean."
     },
     {
-      "ticket_id": "TICKET-12",
+      "ticket_id": "TICKET-13",
       "priority": "P1",
       "category": "Structured Data",
       "task": "Inject Schema.org JSON-LD (Organization, Service, FAQPage)",
@@ -117,12 +143,44 @@
       "action": "Embed structured data in page head for both English and Korean pages."
     },
     {
-      "ticket_id": "TICKET-13",
+      "ticket_id": "TICKET-14",
       "priority": "P2",
       "category": "UX & E-E-A-T",
       "task": "Resolve 'Meet our Team' Navigation Loop on /about",
       "target_files": ["pages/about.js"],
       "action": "Fix button looping back to /about; display actual leadership and senior partner credentials."
+    },
+    {
+      "ticket_id": "TICKET-15",
+      "priority": "P2",
+      "category": "Fact Consistency",
+      "task": "Standardize Founding Year to 2009 Site-wide",
+      "target_files": ["pages/index.js", "pages/about.js"],
+      "action": "Resolve conflict between homepage (2009) and about hero (2019) by standardizing to 2009."
+    },
+    {
+      "ticket_id": "TICKET-16",
+      "priority": "P2",
+      "category": "Social Media Sharing",
+      "task": "Implement Open Graph & Twitter Cards",
+      "target_files": ["components/SEO.jsx"],
+      "action": "Inject og:title, og:description, og:image, and twitter:card tags for LinkedIn and WhatsApp previews."
+    },
+    {
+      "ticket_id": "TICKET-17",
+      "priority": "P2",
+      "category": "Blog Metadata",
+      "task": "Inject Dynamic Excerpt Meta Descriptions (Fixes 16 Missing Meta Warnings)",
+      "target_files": ["pages/blog/[slug].js"],
+      "action": "Pass the first 150 characters of blog posts as meta description. Eliminates 16 missing meta description warnings in Semrush."
+    },
+    {
+      "ticket_id": "TICKET-18",
+      "priority": "P2",
+      "category": "Broken Links",
+      "task": "Audit & 301 Redirect 3 Broken Pages",
+      "target_files": ["next.config.js (redirects)"],
+      "action": "Identify the 3 broken internal links flagged by Semrush (3.8%) and implement 301 permanent redirects in next.config.js."
     }
   ],
   "nextjs_code_snippets": {

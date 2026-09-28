@@ -53,6 +53,46 @@ Dokumen ini disusun khusus untuk diserahkan langsung kepada **tim developer** we
 +--------------------------+---------------------+----------------------------------------+
 ```
 
+### 2.1. Validasi Data Tool Audit Pihak Ketiga (Semrush Site Audit - 25 September 2026)
+Sebagai bukti objektif independen di luar audit manual, berikut adalah data hasil *crawling* **Semrush Site Audit** terhadap domain `inpartner.id`:
+
+```
++-----------------------------------------------------------------------------------------+
+|                              SEMRUSH SITE AUDIT OVERVIEW (LIVE)                         |
++------------------------------------+----------------------------------------------------+
+| Metrik Audit                       | Nilai Temuan Semrush                               |
++------------------------------------+----------------------------------------------------+
+| Site Health Score                  | 74%                                                |
+| AI Search Health Score             | 83%                                                |
+| Total Crawled Pages                | 80 Halaman                                         |
+| - Pages with Issues                | 76 Halaman (95% dari total situs bermasalah!)      |
+| - Broken Pages (Error 4xx/5xx)     | 3 Halaman (3.8%)                                   |
+| - Healthy Pages                    | Hanya 1 Halaman (1.3%)                             |
+| Total Errors                       | 203 ERRORS                                         |
+| Total Warnings                     | 154 WARNINGS                                       |
++------------------------------------+----------------------------------------------------+
+```
+
+#### 5 Isu Teratas Temuan Semrush & Solusi Teknis Next.js:
+1. **72 Issues with Duplicate Title Tags (Status: Error - 72 kasus):**
+   - *Penyebab di Next.js:* Komponen `_app.js` atau shared layout mewariskan tag `<title>` default ke sub-halaman, kategori blog (`/blog/category/...`), atau halaman terfilter tanpa dioverride secara dinamis.
+   - *Solusi:* Diatasi 100% melalui **TIKET-03 & TIKET-11** menggunakan komponen `components/SEO.jsx` yang menyuntikkan title unik per halaman.
+2. **72 Pages Have Duplicate Content Issues (Status: Error - 72 kasus):**
+   - *Penyebab di Next.js:* **100% Absennya Tag Canonical!** Tanpa `<link rel="canonical" href="..." />`, crawler Semrush dan Google menganggap variasi parameter URL (misal: query string, trailing slash `/services` vs `/services/`, dan fragment `#`) sebagai 72 halaman duplikat yang identik.
+   - *Solusi:* Diatasi 100% melalui **TIKET-03 (Self-referencing Canonical)**. Sekali tag canonical dipasang, 72 error ini akan otomatis hilang pada crawl berikutnya.
+3. **56 Pages Have Duplicate Meta Descriptions (Status: Error - 56 kasus):**
+   - *Penyebab di Next.js:* Teks definisi generik *"Inpartner involves the planning, organizing, and overseeing of resources..."* bocor ke 56 URL (termasuk `/project`, `/blog`, arsip, dan pagination).
+   - *Solusi:* Diatasi melalui **TIKET-07 & TIKET-11** dengan memisahkan meta description secara unik sesuai Kamus Metadata di Bab 5.
+4. **16 Pages Don't Have Meta Descriptions (Status: Warning - 16 kasus):**
+   - *Penyebab di Next.js:* Halaman artikel blog individual (seperti rute `/blog/what-is-the-most-profitable-business-in-indonesia`) tidak mengoper nilai meta description ke `<Head>`.
+   - *Solusi:* Diatasi melalui **TIKET-17** dengan mengambil ringkasan artikel (150 karakter pertama) sebagai meta description dinamis.
+5. **42 Pages Have a Low Word Count (Status: Warning - 42 kasus):**
+   - *Penyebab:* Halaman filter kategori dan hub sektor yang sangat tipis teks (*thin content*).
+   - *Solusi:* Tambahkan pengantar minimal 100–150 kata pada setiap halaman direktori.
+6. **3 Broken Pages (3.8%):**
+   - *Penyebab:* Terdapat 3 link internal yang mengarah ke URL 404 (mati).
+   - *Solusi:* Diatasi melalui **TIKET-18** dengan audit link mati dan pasang 301 Redirect di `next.config.js`.
+
 ### 4 Akar Masalah Terbesar yang Wajib Dipahami Developer:
 1. **Kegagalan Arsitektur Versi Korea (P0):** Tombol "KR" pada navigasi hanya memicu skrip terjemahan instan Google Translate (`#google_translate_element`). Robot perayap (Googlebot, Naver Yeti, Bingbot) **tidak mengeksekusi widget tersebut**. Mesin pencari hanya membaca HTML awal berbahasa Inggris. Versi Korea saat ini **100% tidak terindeks**.
 2. **The Hash-Fragment Trap pada Layanan (`/services#...`) (P0):** Tiga pilar layanan utama—*Business & Management Consulting*, *Investment*, dan *Capacity Building*—ditumpuk pada satu halaman menggunakan tagar ID `#`. Google **tidak mengindeks fragment identifier (`#`)** sebagai landing page terpisah.
